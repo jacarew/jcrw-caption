@@ -226,10 +226,19 @@
   @keyframes drop{from{opacity:0;transform:translateY(-8px)}}
 
   /* destek */
-  .support{text-align:center;max-width:640px;margin:0 auto}
+  .support{text-align:center;max-width:860px;margin:0 auto}
   .support .cup{font-size:54px;display:inline-block;animation:steam 2.4s ease-in-out infinite}
   @keyframes steam{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-8px) rotate(6deg)}}
   .support p{color:var(--muted);margin:10px 0 22px}
+  .support-name{font-weight:800;color:#eef7ff;margin:-8px 0 20px}
+  .support-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:24px;text-align:left}
+  .support-option{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+  .support-option h3{font-size:17px;margin-bottom:6px}.support-option p{font-size:14px;margin:0 0 14px}
+  .qr-grid{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+  .qr-grid a{display:block;width:86px;text-align:center;color:var(--muted);font-size:12px;font-weight:700}
+  .qr-grid img{display:block;width:86px;height:86px;object-fit:cover;border-radius:10px;background:white;margin-bottom:5px}
+  .hero .badge{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(118,255,201,.48);background:linear-gradient(110deg,rgba(17,118,94,.42),rgba(16,54,89,.64));box-shadow:0 10px 28px rgba(0,0,0,.2);letter-spacing:.45px;padding:9px 15px;border-radius:999px;color:#d7ffef;font-weight:800}
+  .hero .badge::before{content:"";width:8px;height:8px;border-radius:50%;background:#42efad;box-shadow:0 0 12px #42efad}
 
   footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:var(--muted);font-size:14px}
   footer img{width:40px;height:40px;border-radius:11px;margin:0 auto 10px}
@@ -358,8 +367,8 @@
   <div class="wrap">
     <div class="reveal">
       <div class="eyebrow" data-i18n="g_eye">KULLANIM</div>
-      <h2 data-i18n="g_h">Beş adımda hazır.</h2>
-      <p class="sub" data-i18n="g_sub">Kurulum birkaç dakika sürer.</p>
+      <h2 data-i18n="g_h">Kısa kurulum, geniş kişiselleştirme.</h2>
+      <p class="sub" data-i18n="g_sub">Kurulum birkaç dakika sürer; altyazının görünümünü ve çeviri akışını daha sonra dilediğin gibi ayarlayabilirsin.</p>
     </div>
     <!-- TODO: adımları uygulamanın gerçek akışına göre düzenle (dil sözlüğünde s1..s5) -->
     <ol class="steps">
@@ -368,6 +377,9 @@
       <li class="reveal"><b data-i18n="s3h">İkisini aynı ağa bağla</b><span data-i18n="s3p">Telefon ve TV aynı Wi-Fi ağında olmalı.</span></li>
       <li class="reveal"><b data-i18n="s4h">Alıcıyı aç, vericiyi bağla</b><span data-i18n="s4p">TV'de Alıcı'yı başlat; telefondaki Verici'den TV'yi seçip bağlan.</span></li>
       <li class="reveal"><b data-i18n="s5h">PS5'i aç, oyna</b><span data-i18n="s5p">Altyazılar çevrilip TV ekranında görünür.</span></li>
+      <li class="reveal"><b data-i18n="s6h">Çeviri kaynağını seç</b><span data-i18n="s6p">Varsayılan ücretsiz motorla başlayabilir; istersen kendi DeepL, Gemini, OpenAI veya diğer desteklenen API anahtarını ayarlardan ekleyebilirsin.</span></li>
+      <li class="reveal"><b data-i18n="s7h">Altyazıyı kendine göre düzenle</b><span data-i18n="s7p">OCR alanını, çeviri konumunu, yazı boyutunu, rengini, fontu, fırça dokulu arka planı ve her karakterin renk paletini hızlı ayarlardan kişiselleştir.</span></li>
+      <li class="reveal"><b data-i18n="s8h">Hızlı ayarlarla kontrol sende</b><span data-i18n="s8p">Oyun sırasında çeviriyi, sesli çeviriyi ve görünümü uygulamadan hızlıca yönet; ekranını gereksiz menülerle kaplama.</span></li>
     </ol>
   </div>
 </section>
@@ -379,7 +391,7 @@
       <h2 data-i18n="f_h">Sık sorulanlar</h2>
     </div>
     <div class="faq reveal">
-      <!-- TODO: gerçek sorularla güncelle -->
+        <details><summary data-i18n="q0">Uygulama neler yapabiliyor?</summary><p data-i18n="a0">Mobil Cihaz Companion ekrandaki seçtiğin metin alanını algılar, seçtiğin çeviri motoruyla çevirir ve Jcrw TV Alıcısı aracılığıyla sonucu TV'de gösterir. Konum, font, renk, boyut, fırça dokulu arka plan, konuşmacı rengi, karaktere özel renk paletleri ve sesli çeviri seçenekleri kişiselleştirilebilir.</p></details>
       <details><summary data-i18n="q1">Gerçekten ücretsiz mi?</summary><p data-i18n="a1">Evet. Uygulamalar ücretsiz; bağış tamamen isteğe bağlı.</p></details>
       <details><summary data-i18n="q2">"Bilinmeyen kaynak" uyarısı alıyorum.</summary><p data-i18n="a2">APK'lar Play Store dışından kurulduğu için normaldir. Ayarlardan ilgili uygulamaya kurulum izni vermen yeterli.</p></details>
       <details><summary data-i18n="q3">Çeviri TV'de görünmüyor.</summary><p data-i18n="a3">Telefon ve TV'nin aynı Wi-Fi ağında olduğunu ve Alıcı'nın TV'de açık olduğunu kontrol et.</p></details>
@@ -395,8 +407,25 @@
       <span class="cup">☕</span>
       <h2 data-i18n="sup_h">Beğendiysen bir kahve ısmarla</h2>
       <p data-i18n="sup_p">Uygulama her zaman ücretsiz kalacak. Yalnızca bağış yapmak isteyenler için; zorunlu değil.</p>
-      <!-- TODO: kendi Buy Me a Coffee adresini yaz -->
-      <a class="btn coffee" id="bmc" href="https://buymeacoffee.com/YOUR_NAME" target="_blank" rel="noopener" data-i18n="sup_b">☕ Buy me a coffee</a>
+      <div class="support-name" data-i18n="sup_name">JCRW Caption proje desteği</div>
+      <div class="support-options">
+        <div class="support-option">
+          <h3 data-i18n="sup_bmc_h">Uluslararası destek</h3>
+          <p data-i18n="sup_bmc_p">Kart ve diğer küresel ödeme yöntemleri için.</p>
+          <a class="btn coffee" id="bmc" href="https://buymeacoffee.com/jcrw" target="_blank" rel="noopener" data-i18n="sup_b">☕ Buy me a coffee</a>
+        </div>
+        <div class="support-option">
+          <h3 data-i18n="sup_papara_h">Papara ile destek</h3>
+          <p data-i18n="sup_papara_p">Tutarı seçip ilgili QR kodu taratabilirsin.</p>
+          <div class="qr-grid">
+            <a href="papara-5-qr.png" target="_blank"><img src="papara-5-qr.png" alt="Papara ₺10 destek QR"><span data-i18n="qr1">₺10</span></a>
+            <a href="papara-4-qr.png" target="_blank"><img src="papara-4-qr.png" alt="Papara ₺20 destek QR"><span data-i18n="qr2">₺20</span></a>
+            <a href="papara-3-qr.png" target="_blank"><img src="papara-3-qr.png" alt="Papara ₺50 destek QR"><span data-i18n="qr3">₺50</span></a>
+            <a href="papara-2-qr.png" target="_blank"><img src="papara-2-qr.png" alt="Papara ₺100 destek QR"><span data-i18n="qr4">₺100</span></a>
+            <a href="papara-1-qr.png" target="_blank"><img src="papara-1-qr.png" alt="Papara ₺200 destek QR"><span data-i18n="qr5">₺200</span></a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -423,18 +452,22 @@
       d2_tag:"Android TV",d2_h:"Alıcı (TV)",d2_p:"Gelen çeviriyi TV ekranında altyazı olarak gösterir.",d2_b:"⬇ Alıcı APK'yı indir",
       free_eye:"FİYAT",free_h:"Tamamen ücretsiz.",free_p:"Abonelik yok, gizli ücret yok, premium sürüm yok. Herkes için aynı uygulama.",
       p1:"✓ Abonelik yok",p2:"✓ Gizli ücret yok",p3:"✓ Premium sürüm yok",p4:"✓ Herkese açık",
-      g_eye:"KULLANIM",g_h:"Beş adımda hazır.",g_sub:"Kurulum birkaç dakika sürer. Adım adım rehber uygulamanın içinde de var.",
+      g_eye:"KULLANIM",g_h:"Kısa kurulum, geniş kişiselleştirme.",g_sub:"Kurulum birkaç dakika sürer; altyazının görünümünü ve çeviri akışını daha sonra dilediğin gibi ayarlayabilirsin.",
       s1h:"Alıcıyı TV'ye kur",s1p:"Alıcı APK'yı TV'ne yükle. Bilinmeyen kaynaklardan kuruluma izin vermen gerekebilir.",
       s2h:"Vericiyi telefona kur",s2p:"Verici APK'yı telefona indirip kur ve istenen izinleri ver.",
       s3h:"İkisini aynı ağa bağla",s3p:"Telefon ve TV aynı Wi-Fi ağında olmalı.",
       s4h:"Alıcıyı aç, vericiyi bağla",s4p:"TV'de Alıcı'yı başlat; telefondaki Verici'den TV'yi seçip bağlan.",
       s5h:"PS5'i aç, oyna",s5p:"Altyazılar çevrilip TV ekranında görünür.",
+      s6h:"Çeviri kaynağını seç",s6p:"Varsayılan ücretsiz motorla başlayabilir; istersen kendi DeepL, Gemini, OpenAI veya diğer desteklenen API anahtarını ayarlardan ekleyebilirsin.",
+      s7h:"Altyazıyı kendine göre düzenle",s7p:"OCR alanını, çeviri konumunu, yazı boyutunu, rengini, fontu, fırça dokulu arka planı ve her karakterin renk paletini hızlı ayarlardan kişiselleştir.",
+      s8h:"Hızlı ayarlarla kontrol sende",s8p:"Oyun sırasında çeviriyi, sesli çeviriyi ve görünümü uygulamadan hızlıca yönet; ekranını gereksiz menülerle kaplama.",
       f_eye:"SSS",f_h:"Sık sorulanlar",
+      q0:"Uygulama neler yapabiliyor?",a0:"Mobil Cihaz Companion ekrandaki seçtiğin metin alanını algılar, seçtiğin çeviri motoruyla çevirir ve Jcrw TV Alıcısı aracılığıyla sonucu TV'de gösterir. Konum, font, renk, boyut, fırça dokulu arka plan, konuşmacı rengi, karaktere özel renk paletleri ve sesli çeviri seçenekleri kişiselleştirilebilir.",
       q1:"Gerçekten ücretsiz mi?",a1:"Evet. Uygulamalar ücretsiz; bağış tamamen isteğe bağlı.",
       q2:"\"Bilinmeyen kaynak\" uyarısı alıyorum.",a2:"APK'lar Play Store dışından kurulduğu için normaldir. Ayarlardan ilgili uygulamaya kurulum izni vermen yeterli.",
       q3:"Çeviri TV'de görünmüyor.",a3:"Telefon ve TV'nin aynı Wi-Fi ağında olduğunu ve Alıcı'nın TV'de açık olduğunu kontrol et.",
       q4:"Hangi dillerde çeviri yapıyor?",a4:"Tüm dilleri destekler.",q5:"Çeviri gecikmesi ne kadar?",a5:"Gecikme süresini uygulamadan kendin ayarlayabilirsin.",
-      sup_h:"Beğendiysen bir kahve ısmarla",sup_p:"Uygulama her zaman ücretsiz kalacak. Yalnızca bağış yapmak isteyenler için; zorunlu değil.",sup_b:"☕ Buy me a coffee",
+      sup_h:"Beğendiysen bir kahve ısmarla",sup_p:"Uygulama her zaman ücretsiz kalacak. Destek olmak tamamen isteğe bağlıdır.",sup_name:"JCRW Caption proje desteği",sup_bmc_h:"Uluslararası destek",sup_bmc_p:"Kart ve diğer küresel ödeme yöntemleri için.",sup_papara_h:"Papara ile destek",sup_papara_p:"Tutarı seçip ilgili QR kodu taratabilirsin.",sup_b:"☕ Buy me a coffee",qr1:"₺10",qr2:"₺20",qr3:"₺50",qr4:"₺100",qr5:"₺200",
       foot:"Oyuncular için, ücretsiz.",
       ticker:["Canlı çeviri","PS5 uyumlu","Android TV alıcı","Telefon verici","Gecikmesiz altyazı","%100 ücretsiz","Oyun deneyimini bozmaz"],
       demo:[["Defend the extraction point.","Tahliye noktasını savun.","GÖREV",12,8],["Chopper overhead! Take cover!","Tepemizde helikopter var! Siper al!","KOMUTAN",50,14],["Reloading! Cover me!","Şarjör değiştiriyorum! Beni koru!","TAKIM",39,58],["Enemy on the right, flank them!","Sağda düşman var, kanattan sıkıştır!","TAKIM",62,58],["Extraction in thirty seconds. Hold the line!","Tahliyeye otuz saniye var. Hattı koru!","KOMUTAN",81,46]]
@@ -451,18 +484,22 @@
       d2_tag:"Android TV",d2_h:"Receiver (TV)",d2_p:"Shows the incoming translation as subtitles on your TV screen.",d2_b:"⬇ Download Receiver APK",
       free_eye:"PRICE",free_h:"Completely free.",free_p:"No subscription, no hidden fees, no premium tier. The same app for everyone.",
       p1:"✓ No subscription",p2:"✓ No hidden fees",p3:"✓ No premium tier",p4:"✓ Open to everyone",
-      g_eye:"GUIDE",g_h:"Ready in five steps.",g_sub:"Setup takes just a few minutes. A step-by-step guide is also built into the app.",
+      g_eye:"GUIDE",g_h:"Quick setup, deep customization.",g_sub:"Setup takes a few minutes; you can then tailor subtitle styling and the translation flow to your preference.",
       s1h:"Install the Receiver on your TV",s1p:"Install the Receiver APK on your TV. You may need to allow installs from unknown sources.",
       s2h:"Install the Sender on your phone",s2p:"Download and install the Sender APK on your phone and grant the requested permissions.",
       s3h:"Connect both to the same network",s3p:"Your phone and TV must be on the same Wi-Fi network.",
       s4h:"Open the Receiver, connect the Sender",s4p:"Start the Receiver on your TV; in the Sender on your phone, pick your TV and connect.",
       s5h:"Turn on PS5 and play",s5p:"Subtitles are translated and appear on your TV screen.",
+      s6h:"Choose a translation source",s6p:"Start with the default free engine, or add your own DeepL, Gemini, OpenAI or another supported API key in Settings.",
+      s7h:"Make subtitles yours",s7p:"Personalize the OCR region, translated-text position, size, colour, font, brush-textured background and each character's colour palette from Quick Settings.",
+      s8h:"Stay in control with Quick Settings",s8p:"Manage translation, voice translation and appearance while playing without covering your screen in unnecessary menus.",
       f_eye:"FAQ",f_h:"Frequently asked",
+      q0:"What can the app do?",a0:"The Mobile Device Companion detects the text region you choose, translates it using your selected provider, and sends the result to Jcrw TV Receiver for on-screen display. Position, font, colour, size, brush-textured background, speaker colour, character-specific palettes and voice translation can be personalized.",
       q1:"Is it really free?",a1:"Yes. The apps are free; donations are entirely optional.",
       q2:"I get an \"unknown source\" warning.",a2:"That's normal for APKs installed outside the Play Store. Just allow installs for the relevant app in your settings.",
       q3:"The translation doesn't show on my TV.",a3:"Make sure your phone and TV are on the same Wi-Fi network and the Receiver is open on the TV.",
       q4:"Which languages are supported?",a4:"All languages are supported.",q5:"How long is the translation delay?",a5:"You can set the delay yourself in the app.",
-      sup_h:"Enjoying it? Buy me a coffee",sup_p:"The app will always stay free. This is only for those who want to donate; it's never required.",sup_b:"☕ Buy me a coffee",
+      sup_h:"Enjoying it? Buy me a coffee",sup_p:"The app will always stay free. Supporting the project is entirely optional.",sup_name:"JCRW Caption project support",sup_bmc_h:"International support",sup_bmc_p:"For cards and other global payment methods.",sup_papara_h:"Support with Papara",sup_papara_p:"Choose an amount and scan its QR code.",sup_b:"☕ Buy me a coffee",qr1:"₺10",qr2:"₺20",qr3:"₺50",qr4:"₺100",qr5:"₺200",
       foot:"Made for gamers, free.",
       ticker:["Live translation","PS5 ready","Android TV receiver","Phone sender","Real-time subtitles","100% free","Won't get in the way of your game"],
       demo:[["脱出ポイントを防衛しろ。","Defend the extraction point.","OBJECTIVE",12,8],["頭上にヘリだ！遮蔽物へ！","Chopper overhead! Take cover!","COMMAND",50,14],["リロード中！援護を頼む！","Reloading! Cover me!","SQUAD",39,58],["右に敵だ、側面から攻めろ！","Enemy on the right, flank them!","SQUAD",62,58],["脱出まで30秒。持ちこたえろ！","Extraction in thirty seconds. Hold the line!","COMMAND",81,46]]
@@ -486,6 +523,9 @@
   function renderVer(){
     var v="v"+VER.versionName;
     document.querySelectorAll("[data-ver]").forEach(function(x){x.textContent=v;});
+    var builds=document.querySelectorAll("[data-ver]");
+    if(builds[0]) builds[0].textContent="v1.0.11";
+    if(builds[1]) builds[1].textContent="v1.0.8";
     document.getElementById("wnVer").textContent=v;
     document.getElementById("wnDate").textContent=fmt(VER.date);
     var fresh=VER.date&&(Date.now()-new Date(VER.date).getTime())<14*864e5;
