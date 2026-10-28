@@ -1,0 +1,18 @@
+{
+  "versionCode": 11,
+  "versionName": "1.0.11",
+  "date": "2026-10-28",
+  "notes": {
+    "tr": [
+      "İlk yayın: Mobil Cihaz Companion 1.0.11 ve Jcrw TV Alıcısı 1.0.8.",
+      "Telefon veya tablet çeviriyi yapar; Android TV alıcısı altyazıyı TV ekranında gösterir."
+    ],
+    "en": [
+      "First public release: Mobile Companion 1.0.11 and Jcrw TV Receiver 1.0.8.",
+      "Your phone or tablet translates; the Android TV receiver displays captions on the TV."
+    ]
+  },
+  "sender": "https://github.com/jacarew/jcrw-caption/releases/latest/download/Jcrw-Companion-1.0.11-release.apk",
+  "receiver": "https://github.com/jacarew/jcrw-caption/releases/latest/download/Jcrw-TV-Receiver-1.0.8-release.apk",
+  "history": []
+}
