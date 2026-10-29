@@ -1,25 +1,39 @@
 {
-  "versionCode": 14,
-  "versionName": "1.0.14",
+  "versionCode": 15,
+  "versionName": "1.0.15",
   "receiverVersion": "1.0.8",
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "notes": {
     "tr": [
-      "Hızlı ayarlara FPS ve çözünürlük seçenekleri eklendi; ayarlar ana ayarlarla eşzamanlı çalışır.",
-      "Altyazı konumu varsayılan olarak yalnızca TV olacak şekilde ayarlandı.",
-      "Oyun profilleri kalıcı olarak kaydedilir; oyun ekleme, karakter tarama ve eşleştirilen karakter renklerini görüntüleme iyileştirildi.",
-      "OCR, oyun karakter listesini kullanarak yanlış okunan konuşmacı adlarını düzeltebilir; ilk 15 karakterde hatalı noktalama işaretleri konuşmacı ayıracı olarak tanınır."
+      "Çeşitli hata düzeltmeleri yapıldı.",
+      "Kararlılık ve performans iyileştirmeleri yapıldı."
     ],
     "en": [
-      "Added FPS and resolution controls to Quick Settings and synchronized them with the main settings.",
-      "Subtitle placement now defaults to TV only.",
-      "Game profiles are saved persistently; adding games, scanning characters, and viewing assigned character colors are improved.",
-      "OCR can correct misread speaker names using the game's character list; punctuation in the first 15 characters is normalized as a speaker separator."
+      "Various bug fixes.",
+      "Stability and performance improvements."
     ]
   },
   "sender": "https://github.com/jacarew/jcrw-caption/releases/latest/download/app-companion-release.apk",
   "receiver": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.11/Jcrw-TV-Receiver-1.0.8-release.apk",
   "history": [
+    {
+      "versionName": "1.0.14",
+      "date": "2026-10-28",
+      "notes": {
+        "tr": [
+          "Hızlı ayarlara FPS ve çözünürlük seçenekleri eklendi; ayarlar ana ayarlarla eşzamanlı çalışır.",
+          "Altyazı konumu varsayılan olarak yalnızca TV olacak şekilde ayarlandı.",
+          "Oyun profilleri kalıcı olarak kaydedilir; oyun ekleme, karakter tarama ve eşleştirilen karakter renklerini görüntüleme iyileştirildi.",
+          "OCR, oyun karakter listesini kullanarak yanlış okunan konuşmacı adlarını düzeltebilir; ilk 15 karakterde hatalı noktalama işaretleri konuşmacı ayıracı olarak tanınır."
+        ],
+        "en": [
+          "Added FPS and resolution controls to Quick Settings and synchronized them with the main settings.",
+          "Subtitle placement now defaults to TV only.",
+          "Game profiles are saved persistently; adding games, scanning characters, and viewing assigned character colors are improved.",
+          "OCR can correct misread speaker names using the game's character list; punctuation in the first 15 characters is normalized as a speaker separator."
+        ]
+      }
+    },
     {
       "versionName": "1.0.11",
       "date": "2026-10-28",
