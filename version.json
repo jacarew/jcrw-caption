@@ -1,7 +1,7 @@
 {
   "versionCode": 21,
   "versionName": "1.0.21",
-  "receiverVersion": "1.0.15",
+  "receiverVersion": "1.0.16",
   "date": "2026-10-30",
   "notes": {
     "tr": [
@@ -14,7 +14,7 @@
     ]
   },
   "sender": "https://github.com/jacarew/jcrw-caption/releases/latest/download/app-companion-release.apk",
-  "receiver": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.21/jcrw-tv-receiver-1.0.15-universal.apk",
+  "receiver": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.21/jcrw-tv-receiver-1.0.16-universal.apk",
   "history": [
     {
       "versionName": "1.0.20",
