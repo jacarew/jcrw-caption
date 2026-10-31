@@ -148,6 +148,7 @@
   .newtag{font-size:11px;font-weight:900;letter-spacing:1.2px;color:#2b0016;background:var(--pink);padding:2px 9px;border-radius:999px;animation:pulse 1.4s ease-in-out infinite}
   @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,77,141,.7)}50%{box-shadow:0 0 0 8px rgba(255,77,141,0)}}
   .whatsnew h3{font-size:20px;margin-bottom:8px}
+  .wn-app+.wn-app{margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)}
   .whatsnew ul{margin:0 0 4px 20px;color:#c4cfee;font-size:15px}
   .whatsnew .note{color:#c4cfee;font-size:15px}
   .whatsnew details{margin:14px 0 0;background:transparent;border-radius:10px}
@@ -352,10 +353,16 @@
       </div>
     </div>
     <div class="whatsnew reveal" id="wn">
-      <div class="wn-head"><span class="ver" id="wnVer"></span><span id="wnDate"></span><span class="newtag" id="wnNew" hidden data-i18n="wn_new">YENİ</span></div>
       <h3 data-i18n="wn_h">Neler yeni</h3>
-      <div id="wnNotes"></div>
-      <details id="wnHist" hidden><summary data-i18n="wn_hist">Önceki sürümler</summary><div class="hist" id="wnList"></div></details>
+      <div class="wn-app">
+        <div class="wn-head"><span data-i18n="wn_sender">Telefon Companion</span><span class="ver" id="wnVer"></span><span id="wnDate"></span><span class="newtag" id="wnNew" hidden data-i18n="wn_new">YENİ</span></div>
+        <div id="wnNotes"></div>
+      </div>
+      <div class="wn-app">
+        <div class="wn-head"><span data-i18n="wn_receiver">TV Alıcısı</span><span class="ver" id="wnReceiverVer"></span><span id="wnReceiverDate"></span><span class="newtag" id="wnReceiverNew" hidden data-i18n="wn_new">YENİ</span></div>
+        <div id="wnReceiverNotes"></div>
+      </div>
+      <details id="wnHist" hidden><summary data-i18n="wn_hist">Önceki Companion sürümleri</summary><div class="hist" id="wnList"></div></details>
     </div>
   </div>
 </section>
@@ -485,7 +492,7 @@
       how_eye:"NASIL ÇALIŞIR",how_h:"Telefon dinler, TV gösterir.",how_sub:"İki uygulama birlikte çalışır: telefondaki verici çeviriyi yapar, TV'deki alıcı altyazıyı ekrana basar.",
       n1:"Oyun",n2a:"Telefon",n2b:"Verici • Çeviri",n3:"Alıcı • Altyazı",
       dl_eye:"İNDİR",dl_h:"İki uygulama, ikisi de ücretsiz.",dl_sub:"Telefona Verici, TV'ye Alıcı kurulur. İkisi birlikte çalışır.",
-      wn_new:"YENİ",wn_h:"Neler yeni",wn_hist:"Önceki sürümler",d1_tag:"Telefon",d1_h:"Verici (Companion)",d1_p:"Altyazıyı yakalar, çevirir ve TV'ye gönderir.",d1_b:"⬇ Verici APK'yı indir",
+      wn_new:"YENİ",wn_h:"Neler yeni",wn_sender:"Telefon Companion",wn_receiver:"TV Alıcısı",wn_hist:"Önceki Companion sürümleri",d1_tag:"Telefon",d1_h:"Verici (Companion)",d1_p:"Altyazıyı yakalar, çevirir ve TV'ye gönderir.",d1_b:"⬇ Verici APK'yı indir",
       d2_tag:"Android TV",d2_h:"Alıcı (TV)",d2_p:"Gelen çeviriyi TV ekranında altyazı olarak gösterir.",d2_b:"⬇ Alıcı APK'yı indir",
       free_eye:"FİYAT",free_h:"Tamamen ücretsiz.",free_p:"Abonelik yok, gizli ücret yok, premium sürüm yok. Herkes için aynı uygulama.",
       p1:"✓ Abonelik yok",p2:"✓ Gizli ücret yok",p3:"✓ Premium sürüm yok",p4:"✓ Herkese açık",
@@ -517,7 +524,7 @@
       how_eye:"HOW IT WORKS",how_h:"Phone listens, TV shows.",how_sub:"Two apps work together: the sender on your phone translates, the receiver on your TV displays the subtitles.",
       n1:"Game",n2a:"Phone",n2b:"Sender • Translate",n3:"Receiver • Subtitles",
       dl_eye:"DOWNLOAD",dl_h:"Two apps, both free.",dl_sub:"Install the Sender on your phone and the Receiver on your TV. They work together.",
-      wn_new:"NEW",wn_h:"What's new",wn_hist:"Previous versions",d1_tag:"Phone",d1_h:"Sender (Companion)",d1_p:"Captures subtitles, translates them and sends them to your TV.",d1_b:"⬇ Download Sender APK",
+      wn_new:"NEW",wn_h:"What's new",wn_sender:"Phone Companion",wn_receiver:"TV Receiver",wn_hist:"Previous Companion versions",d1_tag:"Phone",d1_h:"Sender (Companion)",d1_p:"Captures subtitles, translates them and sends them to your TV.",d1_b:"⬇ Download Sender APK",
       d2_tag:"Android TV",d2_h:"Receiver (TV)",d2_p:"Shows the incoming translation as subtitles on your TV screen.",d2_b:"⬇ Download Receiver APK",
       free_eye:"PRICE",free_h:"Completely free.",free_p:"No subscription, no hidden fees, no premium tier. The same app for everyone.",
       p1:"✓ No subscription",p2:"✓ No hidden fees",p3:"✓ No premium tier",p4:"✓ Open to everyone",
@@ -551,7 +558,7 @@
     tv:"https://github.com/"+GH+"/releases/download/v1.0.21/jcrw-tv-receiver-1.0.17-universal.apk"
   };
   /* version.json okunamazsa (ör. dosyayı çift tıklayıp açınca) gösterilecek yedek */
-  var VER={"versionCode":21,"versionName":"1.0.21","receiverVersion":"1.0.17","date":"2026-10-30","notes":{"tr":["Fırça arka plan seçeneklerine düz siyah zemin eklendi.","%100 opaklık artık alpha 255 üretir; pencere ve altyazı görünümünün alpha değerleri 1.0 olarak sabitlendi."],"en":["Added a solid black background option to brush backgrounds.","100% opacity now produces alpha 255; window and subtitle view alpha are fixed at 1.0."]},"sender":"https://github.com/jacarew/jcrw-caption/releases/latest/download/app-companion-release.apk","receiver":"https://github.com/jacarew/jcrw-caption/releases/download/v1.0.21/app-tv-universal-release.apk","history":[{"versionName":"1.0.20","date":"2026-10-30","notes":{"tr":["Uygulama her açılışta yeni sürüm kontrolü yapar.","Ayarlara elle güncelleme kontrolü eklendi.","Kararlılık ve performans iyileştirmeleri."],"en":["The app checks for updates every time it opens.","Added a manual update check in Settings.","Stability and performance improvements."]}},{"versionName":"1.0.19","date":"2026-10-30","notes":{"tr":["Altyazı arka plan opaklığı, yüksekliği ve genişliği ayarları iyileştirildi.","Kararlılık ve performans iyileştirmeleri."],"en":["Subtitle background opacity, height, and width controls improved.","Stability and performance improvements."]}},{"versionName":"1.0.16","date":"2026-10-29","notes":{"tr":["Uygulama içi güncelleme kontrolü eklendi. 1.0.15 ve daha eski sürümlerden bu sürüme bir kez elle geçiş yapılması gerekir.","Çeşitli hata düzeltmeleri yapıldı.","Kararlılık ve performans iyileştirmeleri yapıldı."],"en":["In-app update checks added. Users on 1.0.15 and older must install this version manually once.","Various bug fixes.","Stability and performance improvements."]}},{"versionName":"1.0.15","date":"2026-10-29","notes":{"tr":["Çeşitli hata düzeltmeleri yapıldı.","Kararlılık ve performans iyileştirmeleri yapıldı."],"en":["Various bug fixes.","Stability and performance improvements."]}},{"versionName":"1.0.14","date":"2026-10-28","notes":{"tr":["Hızlı ayarlara FPS ve çözünürlük seçenekleri eklendi; ayarlar ana ayarlarla eşzamanlı çalışır.","Altyazı konumu varsayılan olarak yalnızca TV olacak şekilde ayarlandı.","Oyun profilleri kalıcı olarak kaydedilir; oyun ekleme, karakter tarama ve eşleştirilen karakter renklerini görüntüleme iyileştirildi.","OCR, oyun karakter listesini kullanarak yanlış okunan konuşmacı adlarını düzeltebilir; ilk 15 karakterde hatalı noktalama işaretleri konuşmacı ayıracı olarak tanınır."],"en":["Added FPS and resolution controls to Quick Settings and synchronized them with the main settings.","Subtitle placement now defaults to TV only.","Game profiles are saved persistently; adding games, scanning characters, and viewing assigned character colors are improved.","OCR can correct misread speaker names using the game's character list; punctuation in the first 15 characters is normalized as a speaker separator."]}},{"versionName":"1.0.11","date":"2026-10-28","notes":{"tr":["İlk yayın: Mobil Cihaz Companion 1.0.11 ve Jcrw TV Alıcısı 1.0.8.","Telefon veya tablet çeviriyi yapar; Android TV alıcısı altyazıyı TV ekranında gösterir."],"en":["First public release: Mobile Companion 1.0.11 and Jcrw TV Receiver 1.0.8.","Your phone or tablet translates; the Android TV receiver displays captions on the TV."]}}]};
+  var VER={"versionCode":21,"versionName":"1.0.21","receiverVersion":"1.0.17","date":"2026-10-30","notes":{"tr":["Fırça arka plan seçeneklerine düz siyah zemin eklendi.","%100 opaklık artık alpha 255 üretir; pencere ve altyazı görünümünün alpha değerleri 1.0 olarak sabitlendi."],"en":["Added a solid black background option to brush backgrounds.","100% opacity now produces alpha 255; window and subtitle view alpha are fixed at 1.0."]},"sender":"https://github.com/jacarew/jcrw-caption/releases/latest/download/app-companion-release.apk","receiver":"https://github.com/jacarew/jcrw-caption/releases/download/v1.0.21/jcrw-tv-receiver-1.0.17-universal.apk","history":[{"versionName":"1.0.20","date":"2026-10-30","notes":{"tr":["Uygulama her açılışta yeni sürüm kontrolü yapar.","Ayarlara elle güncelleme kontrolü eklendi.","Kararlılık ve performans iyileştirmeleri."],"en":["The app checks for updates every time it opens.","Added a manual update check in Settings.","Stability and performance improvements."]}},{"versionName":"1.0.19","date":"2026-10-30","notes":{"tr":["Altyazı arka plan opaklığı, yüksekliği ve genişliği ayarları iyileştirildi.","Kararlılık ve performans iyileştirmeleri."],"en":["Subtitle background opacity, height, and width controls improved.","Stability and performance improvements."]}},{"versionName":"1.0.16","date":"2026-10-29","notes":{"tr":["Uygulama içi güncelleme kontrolü eklendi. 1.0.15 ve daha eski sürümlerden bu sürüme bir kez elle geçiş yapılması gerekir.","Çeşitli hata düzeltmeleri yapıldı.","Kararlılık ve performans iyileştirmeleri yapıldı."],"en":["In-app update checks added. Users on 1.0.15 and older must install this version manually once.","Various bug fixes.","Stability and performance improvements."]}},{"versionName":"1.0.15","date":"2026-10-29","notes":{"tr":["Çeşitli hata düzeltmeleri yapıldı.","Kararlılık ve performans iyileştirmeleri yapıldı."],"en":["Various bug fixes.","Stability and performance improvements."]}},{"versionName":"1.0.14","date":"2026-10-28","notes":{"tr":["Hızlı ayarlara FPS ve çözünürlük seçenekleri eklendi; ayarlar ana ayarlarla eşzamanlı çalışır.","Altyazı konumu varsayılan olarak yalnızca TV olacak şekilde ayarlandı.","Oyun profilleri kalıcı olarak kaydedilir; oyun ekleme, karakter tarama ve eşleştirilen karakter renklerini görüntüleme iyileştirildi.","OCR, oyun karakter listesini kullanarak yanlış okunan konuşmacı adlarını düzeltebilir; ilk 15 karakterde hatalı noktalama işaretleri konuşmacı ayıracı olarak tanınır."],"en":["Added FPS and resolution controls to Quick Settings and synchronized them with the main settings.","Subtitle placement now defaults to TV only.","Game profiles are saved persistently; adding games, scanning characters, and viewing assigned character colors are improved.","OCR can correct misread speaker names using the game's character list; punctuation in the first 15 characters is normalized as a speaker separator."]}},{"versionName":"1.0.11","date":"2026-10-28","notes":{"tr":["İlk yayın: Mobil Cihaz Companion 1.0.11 ve Jcrw TV Alıcısı 1.0.8.","Telefon veya tablet çeviriyi yapar; Android TV alıcısı altyazıyı TV ekranında gösterir."],"en":["First public release: Mobile Companion 1.0.11 and Jcrw TV Receiver 1.0.8.","Your phone or tablet translates; the Android TV receiver displays captions on the TV."]}}],"receiverDate":"2026-10-31","receiverNotes":{"tr":["Alıcı başlatılırken çökmeye neden olan izin hatası giderildi."],"en":["Fixed the permission issue that caused the receiver to crash on startup."]}};
 
   function pick(n){var v=n&&(n[lang]||n.en||n.tr||n);return Array.isArray(v)?v:(v?[v]:[]);}
   function fmt(d){try{return new Date(d).toLocaleDateString(lang==="tr"?"tr-TR":"en-US",{day:"numeric",month:"long",year:"numeric"});}catch(e){return d||"";}}
@@ -564,10 +571,19 @@
     if(builds[1]) builds[1].textContent="v"+(VER.receiverVersion||"1.0.8");
     document.getElementById("wnVer").textContent=v;
     document.getElementById("wnDate").textContent=fmt(VER.date);
-    var fresh=VER.date&&(Date.now()-new Date(VER.date).getTime())<14*864e5;
-    document.getElementById("wnNew").hidden=!fresh;
-    var box=document.getElementById("wnNotes");box.textContent="";
-    var ul=el("ul");pick(VER.notes).forEach(function(s){ul.appendChild(el("li",s));});box.appendChild(ul);
+    document.getElementById("wnNew").hidden=!(VER.date&&(Date.now()-new Date(VER.date).getTime())<14*864e5);
+    document.getElementById("wnReceiverVer").textContent="v"+(VER.receiverVersion||"1.0.8");
+    var receiverDate=VER.receiverDate||VER.date;
+    document.getElementById("wnReceiverDate").textContent=fmt(receiverDate);
+    document.getElementById("wnReceiverNew").hidden=!(receiverDate&&(Date.now()-new Date(receiverDate).getTime())<14*864e5);
+    function fillNotes(id,notes){
+      var box=document.getElementById(id);box.textContent="";
+      var items=pick(notes);
+      if(!items.length)return;
+      var ul=el("ul");items.forEach(function(s){ul.appendChild(el("li",s));});box.appendChild(ul);
+    }
+    fillNotes("wnNotes",VER.notes);
+    fillNotes("wnReceiverNotes",VER.receiverNotes);
     var hist=VER.history||[],hb=document.getElementById("wnHist"),hl=document.getElementById("wnList");
     hl.textContent="";hb.hidden=!hist.length;
     hist.forEach(function(h){
