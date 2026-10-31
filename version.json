@@ -108,5 +108,14 @@
         ]
       }
     }
-  ]
+  ],
+  "receiverDate": "2026-10-31",
+  "receiverNotes": {
+    "tr": [
+      "Alıcı başlatılırken çökmeye neden olan izin hatası giderildi."
+    ],
+    "en": [
+      "Fixed the permission issue that caused the receiver to crash on startup."
+    ]
+  }
 }
