@@ -3,7 +3,7 @@
         xmlns:tizen="http://tizen.org/ns/widgets"
         id="http://jacarew.github.io/jcrw-caption/tizen-receiver"
         version="0.1.0" viewmodes="maximized">
-    <tizen:application id="JCRWCaption.TizenReceiver" package="JCRWCaption" required_version="2.4"/>
+    <tizen:application id="jcrwctzn01.tizenreceiver" package="jcrwctzn01" required_version="2.4"/>
     <content src="index.html"/>
     <name>Jcrw Tizen Alıcısı</name>
     <icon src="icon.png"/>
