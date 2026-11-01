@@ -1,21 +1,35 @@
 {
-  "versionCode": 21,
-  "versionName": "1.0.21",
-  "receiverVersion": "1.0.17",
-  "date": "2026-10-30",
+  "versionCode": 22,
+  "versionName": "1.0.22",
+  "receiverVersion": "1.0.18",
+  "date": "2026-11-01",
   "notes": {
     "tr": [
-      "Fırça arka plan seçeneklerine düz siyah zemin eklendi.",
-      "%100 opaklık artık alpha 255 üretir; pencere ve altyazı görünümünün alpha değerleri 1.0 olarak sabitlendi."
+      "Altyazı arka planının varsayılan opaklığı %100 siyah yapıldı; önceki varsayılan %85 ayarı güncellendi.",
+      "Arka plan ayarlarına Floating Clock uyumluluk kutusu eklendi; etkinleştirildiğinde TV overlay penceresi RGBA_8888 biçimini kullanır."
     ],
     "en": [
-      "Added a solid black background option to brush backgrounds.",
-      "100% opacity now produces alpha 255; window and subtitle view alpha are fixed at 1.0."
+      "The default subtitle background is now solid black at 100% opacity; the previous 85% default is migrated.",
+      "Added a Floating Clock compatibility checkbox; when enabled, the TV overlay window uses RGBA_8888 format."
     ]
   },
   "sender": "https://github.com/jacarew/jcrw-caption/releases/latest/download/app-companion-release.apk",
-  "receiver": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.21/jcrw-tv-receiver-1.0.17-universal.apk",
+  "receiver": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.22/jcrw-tv-receiver-1.0.18-universal.apk",
   "history": [
+    {
+      "versionName": "1.0.21",
+      "date": "2026-10-30",
+      "notes": {
+        "tr": [
+          "Fırça arka plan seçeneklerine düz siyah zemin eklendi.",
+          "%100 opaklık artık alpha 255 üretir; pencere ve altyazı görünümünün alpha değerleri 1.0 olarak sabitlendi."
+        ],
+        "en": [
+          "Added a solid black background option to brush backgrounds.",
+          "100% opacity now produces alpha 255; window and subtitle view alpha are fixed at 1.0."
+        ]
+      }
+    },
     {
       "versionName": "1.0.20",
       "date": "2026-10-30",
@@ -109,13 +123,13 @@
       }
     }
   ],
-  "receiverDate": "2026-10-31",
+  "receiverDate": "2026-11-01",
   "receiverNotes": {
     "tr": [
-      "Alıcı başlatılırken çökmeye neden olan izin hatası giderildi."
+      "Arka plan varsayılanı %100 siyah oldu. Floating Clock uyumluluk seçeneği overlay biçimini RGBA_8888 olarak ayarlar."
     ],
     "en": [
-      "Fixed the permission issue that caused the receiver to crash on startup."
+      "Default background is now solid black. Floating Clock compatibility sets the overlay format to RGBA_8888."
     ]
   }
 }
