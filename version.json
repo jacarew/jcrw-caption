@@ -1,7 +1,7 @@
 {
   "versionCode": 22,
   "versionName": "1.0.22",
-  "receiverVersion": "1.0.18",
+  "receiverVersion": "1.0.19",
   "date": "2026-11-01",
   "notes": {
     "tr": [
@@ -14,7 +14,7 @@
     ]
   },
   "sender": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.22/app-companion-1.0.22-release.apk",
-  "receiver": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.22/jcrw-tv-receiver-1.0.18-universal.apk",
+  "receiver": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.23/jcrw-tv-receiver-1.0.19-universal.apk",
   "history": [
     {
       "versionName": "1.0.21",
@@ -123,13 +123,15 @@
       }
     }
   ],
-  "receiverDate": "2026-11-01",
+  "receiverDate": "2026-11-02",
   "receiverNotes": {
     "tr": [
-      "Arka plan varsayılanı %100 siyah oldu. Floating Clock uyumluluk seçeneği overlay biçimini RGBA_8888 olarak ayarlar."
+      "TV Alıcısı başlatma sırasında oluşan çökme düzeltildi; foreground service izni eklendi.",
+      "Kurulu uygulama adı Jcrw TV Alıcısı olarak güncellendi."
     ],
     "en": [
-      "Default background is now solid black. Floating Clock compatibility sets the overlay format to RGBA_8888."
+      "Fixed the TV Receiver startup crash by adding the foreground service permission.",
+      "Changed the installed app name to Jcrw TV Receiver."
     ]
   }
 }
