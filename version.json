@@ -1,21 +1,33 @@
 {
-  "versionCode": 22,
-  "versionName": "1.0.22",
+  "versionCode": 23,
+  "versionName": "1.0.23",
   "receiverVersion": "1.0.19",
-  "date": "2026-11-01",
+  "date": "2026-11-02",
   "notes": {
     "tr": [
-      "Altyazı arka planının varsayılan opaklığı %100 siyah yapıldı; önceki varsayılan %85 ayarı güncellendi.",
-      "Arka plan ayarlarına Floating Clock uyumluluk kutusu eklendi; etkinleştirildiğinde TV overlay penceresi RGBA_8888 biçimini kullanır."
+      "Companion 1.0.23 APK yayımlandı; uygulamadaki sürüm numarası ve indirme bağlantısı eşitlendi."
     ],
     "en": [
-      "The default subtitle background is now solid black at 100% opacity; the previous 85% default is migrated.",
-      "Added a Floating Clock compatibility checkbox; when enabled, the TV overlay window uses RGBA_8888 format."
+      "Companion 1.0.23 APK published; the app version and download link are now aligned."
     ]
   },
-  "sender": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.22/app-companion-1.0.22-release.apk",
+  "sender": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.23/app-companion-1.0.23-release.apk",
   "receiver": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.23/jcrw-tv-receiver-1.0.19-universal.apk",
   "history": [
+    {
+      "versionName": "1.0.22",
+      "date": "2026-11-01",
+      "notes": {
+        "tr": [
+          "Altyazı arka planının varsayılan opaklığı %100 siyah yapıldı; önceki varsayılan %85 ayarı güncellendi.",
+          "Arka plan ayarlarına Floating Clock uyumluluk kutusu eklendi; etkinleştirildiğinde TV overlay penceresi RGBA_8888 biçimini kullanır."
+        ],
+        "en": [
+          "The default subtitle background is now solid black at 100% opacity; the previous 85% default is migrated.",
+          "Added a Floating Clock compatibility checkbox; when enabled, the TV overlay window uses RGBA_8888 format."
+        ]
+      }
+    },
     {
       "versionName": "1.0.21",
       "date": "2026-10-30",
