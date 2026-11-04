@@ -5,14 +5,12 @@
   "date": "2026-11-04",
   "notes": {
     "tr": [
-      "TV Alıcısı ile eşleşme sağlandığı anda telefondaki eşleştirme penceresi artık otomatik olarak kapanır.",
-      "Çoklu cihaz yönetimi ve aktif cihaz seçimi iyileştirildi.",
-      "Ekran yakalama optimizasyonu ve bağlantı kararlılığı artırıldı."
+      "Eşleştirme ve bağlantı iyileştirmeleri yapıldı.",
+      "Kararlılık ve performans artırıldı."
     ],
     "en": [
-      "Pairing dialog on phone now automatically dismisses immediately upon successful TV connection.",
-      "Multi-device management and active device switching improved.",
-      "Screen capture performance optimizations and connection stability fixes."
+      "Pairing and connection improvements.",
+      "Stability and performance improvements."
     ]
   },
   "sender": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.32/app-companion-1.0.32-release.apk",
@@ -154,16 +152,12 @@
   "receiverDate": "2026-11-04",
   "receiverNotes": {
     "tr": [
-      "Mobil cihazla eşleşme tamamlandığı an TV'deki eşleştirme ekranı otomatik olarak kapanır ve yayına geçer.",
-      "Gereksiz 'Yeni Eşleştirme Kodu Oluştur' butonu arayüzden kaldırılarak doğrudan 'Eşleştirme QR Kodunu Göster' akışına geçildi.",
-      "TV ve kaynak tasarrufu için 15 dakika boyunca sinyal gelmediğinde alıcı servis otomatik olarak uyku moduna geçer.",
-      "Kayıtlı eşleşmiş cihazlar listesinden aktif cihazı TV kumandasıyla tek tuşla seçme ve silme desteği."
+      "Eşleştirme akışı ve arayüz sadeleştirildi.",
+      "Kararlılık ve performans artırıldı."
     ],
     "en": [
-      "TV pairing screen automatically closes immediately upon successful companion connection.",
-      "Removed redundant 'Generate New Code' button; streamlined directly to 'Show Pairing QR Code'.",
-      "Auto-sleep mode: Receiver shuts down after 15 minutes of idle time to conserve TV system resources.",
-      "Select active device or delete paired devices easily with the TV remote."
+      "Streamlined pairing flow and UI.",
+      "Stability and performance improvements."
     ]
   }
 }
