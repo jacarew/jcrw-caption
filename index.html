@@ -973,7 +973,7 @@
       </span>
     </div>
     <div class="modal-actions">
-      <a href="#" class="btn" id="warnDownloadTvBtn" style="background: #2563eb;">✅ Evet, Android TV İndir</a>
+      <a href="https://github.com/jacarew/jcrw-caption/releases/download/v1.0.33/jcrw-tv-receiver-1.0.25-universal.apk" download="jcrw-tv-receiver-1.0.25-universal.apk" class="btn" id="warnDownloadTvBtn" style="background: #2563eb;">✅ Evet, Android TV İndir</a>
       <a href="#download" class="btn" id="warnGoCompanionBtn" style="background: rgba(34, 230, 168, 0.2); border-color: var(--green); color: #fff;">📺 Samsung / LG Kullanıyorum</a>
       <button class="btn ghost" id="warnCancelBtn">İptal</button>
     </div>
@@ -1115,8 +1115,9 @@
     });
   }
   function applyLinks(){
-    document.getElementById("dlMobile").href=LINKS.mobile;
-    document.getElementById("dlTv").href=LINKS.tv;
+    var m = document.getElementById("dlMobile"); if (m) m.href = LINKS.mobile;
+    var t = document.getElementById("dlTv"); if (t) t.href = LINKS.tv;
+    var wt = document.getElementById("warnDownloadTvBtn"); if (wt) wt.href = LINKS.tv;
   }
   applyLinks();
   try{
@@ -1267,9 +1268,8 @@
   }
   if (warnDownloadTvBtn) {
     warnDownloadTvBtn.addEventListener("click", function(e) {
-      e.preventDefault();
-      closeWarnModal();
-      window.location.href = LINKS.tv;
+      // Doğrudan HTML href indirmesini engelleme! Sadece modalı kapat.
+      setTimeout(closeWarnModal, 200);
     });
   }
   if (warnGoCompanionBtn) {
