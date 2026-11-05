@@ -1,21 +1,39 @@
 {
-  "versionCode": 32,
-  "versionName": "1.0.32",
+  "versionCode": 33,
+  "versionName": "1.0.33",
   "receiverVersion": "1.0.25",
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "notes": {
     "tr": [
-      "Eşleştirme ve bağlantı iyileştirmeleri yapıldı.",
-      "Kararlılık ve performans artırıldı."
+      "Samsung Tizen OS ve LG webOS Smart TV'ler için sıfır kurulumlu dahili web alıcısı ve Multi-View / Smart View desteği eklendi.",
+      "Televizyona harici uygulama kurmadan doğrudan TV Dahili Web Tarayıcısından QR kod ile saniyeler içinde eşleşme sağlandı.",
+      "Telefondan 'TV Bağlantısını Kes' dendiğinde TV ekranının otomatik temizlenerek başlangıç QR ekranına dönmesi sağlandı.",
+      "Android TV ve Google TV cihazlar için yerel TV alıcısı (1.0.25) tam uyumlu olarak çalışmaya devam etmektedir."
     ],
     "en": [
-      "Pairing and connection improvements.",
-      "Stability and performance improvements."
+      "Added zero-install web receiver and Multi-View / Smart View support for Samsung Tizen OS and LG webOS Smart TVs.",
+      "Instant pairing via TV QR code or 6-digit PIN directly inside built-in TV Web Browser without sideloading.",
+      "Instant automatic reset to QR pairing screen on TV when disconnected from the Companion app.",
+      "Full compatibility maintained with Android TV native receiver (1.0.25)."
     ]
   },
-  "sender": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.32/app-companion-1.0.32-release.apk",
-  "receiver": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.32/jcrw-tv-receiver-1.0.25-universal.apk",
+  "sender": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.33/app-companion-1.0.33-release.apk",
+  "receiver": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.33/jcrw-tv-receiver-1.0.25-universal.apk",
   "history": [
+    {
+      "versionName": "1.0.32",
+      "date": "2026-11-04",
+      "notes": {
+        "tr": [
+          "Eşleştirme ve bağlantı iyileştirmeleri yapıldı.",
+          "Kararlılık ve performans artırıldı."
+        ],
+        "en": [
+          "Pairing and connection improvements.",
+          "Stability and performance improvements."
+        ]
+      }
+    },
     {
       "versionName": "1.0.23",
       "date": "2026-11-02",
