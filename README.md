@@ -12,7 +12,7 @@ Jcrw Caption translates game subtitles on an Android phone or tablet and display
 - 🎨 **Yenilenmiş kullanıcı dostu arayüz** / Refreshed user-friendly interface
 - ⚡ **Kararlılık ve performans artışı** / Stability and performance improvements
 - 🛠️ **Bug fix** / Various bug fixes & subtitle box sizing adjustments
-- 🎮 **Yeni Logo** / Brand new PS5 & Kayı 'İYİ' themed visual identity
+- 🎮 **Logo Güncellendi** / Logo updated
 
 ## Downloads / İndirmeler
 
