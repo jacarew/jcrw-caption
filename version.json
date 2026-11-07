@@ -1,25 +1,41 @@
 {
-  "versionCode": 33,
-  "versionName": "1.0.33",
-  "receiverVersion": "1.0.25",
-  "date": "2026-11-05",
+  "versionCode": 44,
+  "versionName": "1.0.44",
+  "receiverVersion": "1.0.26",
+  "date": "2026-11-07",
   "notes": {
     "tr": [
-      "Samsung Tizen OS ve LG webOS Smart TV'ler için sıfır kurulumlu dahili web alıcısı ve Multi-View / Smart View desteği eklendi.",
-      "Televizyona harici uygulama kurmadan doğrudan TV Dahili Web Tarayıcısından QR kod ile saniyeler içinde eşleşme sağlandı.",
-      "Telefondan 'TV Bağlantısını Kes' dendiğinde TV ekranının otomatik temizlenerek başlangıç QR ekranına dönmesi sağlandı.",
-      "Android TV ve Google TV cihazlar için yerel TV alıcısı (1.0.25) tam uyumlu olarak çalışmaya devam etmektedir."
+      "Yenilenmiş kullanıcı dostu arayüz",
+      "Kararlılık ve performans artışı",
+      "Bug fix"
     ],
     "en": [
-      "Added zero-install web receiver and Multi-View / Smart View support for Samsung Tizen OS and LG webOS Smart TVs.",
-      "Instant pairing via TV QR code or 6-digit PIN directly inside built-in TV Web Browser without sideloading.",
-      "Instant automatic reset to QR pairing screen on TV when disconnected from the Companion app.",
-      "Full compatibility maintained with Android TV native receiver (1.0.25)."
+      "Refreshed user-friendly interface",
+      "Stability and performance improvements",
+      "Bug fixes"
     ]
   },
-  "sender": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.33/app-companion-1.0.33-release.apk",
-  "receiver": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.33/jcrw-tv-receiver-1.0.25-universal.apk",
+  "sender": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.44/app-companion-1.0.44-release.apk",
+  "receiver": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.44/jcrw-tv-receiver-1.0.26-universal.apk",
   "history": [
+    {
+      "versionName": "1.0.33",
+      "date": "2026-11-05",
+      "notes": {
+        "tr": [
+          "Samsung Tizen OS ve LG webOS Smart TV'ler için sıfır kurulumlu dahili web alıcısı ve Multi-View / Smart View desteği eklendi.",
+          "Televizyona harici uygulama kurmadan doğrudan TV Dahili Web Tarayıcısından QR kod ile saniyeler içinde eşleşme sağlandı.",
+          "Telefondan 'TV Bağlantısını Kes' dendiğinde TV ekranının otomatik temizlenerek başlangıç QR ekranına dönmesi sağlandı.",
+          "Android TV ve Google TV cihazlar için yerel TV alıcısı (1.0.26) yeni logosuyla güncellendi."
+        ],
+        "en": [
+          "Added zero-install web receiver and Multi-View / Smart View support for Samsung Tizen OS and LG webOS Smart TVs.",
+          "Instant pairing via TV QR code or 6-digit PIN directly inside built-in TV Web Browser without sideloading.",
+          "Instant automatic reset to QR pairing screen on TV when disconnected from the Companion app.",
+          "Android TV native receiver updated to 1.0.26 with brand new app icon and visual identity."
+        ]
+      }
+    },
     {
       "versionName": "1.0.32",
       "date": "2026-11-04",
@@ -167,14 +183,14 @@
       }
     }
   ],
-  "receiverDate": "2026-11-04",
+  "receiverDate": "2026-11-07",
   "receiverNotes": {
     "tr": [
-      "Eşleştirme akışı ve arayüz sadeleştirildi.",
-      "Kararlılık ve performans artırıldı."
+      "TV Alıcısı yeni PS5 ve Kayı Boyu 'İYİ' temalı şık logosuna kavuştu.",
+      "Kararlılık ve görsel sunum iyileştirildi."
     ],
     "en": [
-      "Streamlined pairing flow and UI.",
+      "New custom PS5 and Kayı tribe 'IYI' themed receiver logo and visual refresh.",
       "Stability and performance improvements."
     ]
   }
