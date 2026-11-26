@@ -897,12 +897,12 @@
 <div id="promoModal" class="modal-overlay" role="dialog" aria-modal="true">
   <div class="modal-card">
     <button class="modal-close" id="promoClose" aria-label="Kapat">✕</button>
-    <div class="promo-badge">🎉 YENİ SÜRÜM • v1.0.44 YAYINDA</div>
-    <h2 class="promo-title">Samsung Tizen & LG webOS Desteği Geldi!</h2>
+    <div class="promo-badge">🎉 YENİ SÜRÜM • v1.0.45 YAYINDA</div>
+    <h2 class="promo-title">Arka Plan Çalışması ve Tam Ekran Çeviri</h2>
     <p class="promo-desc">
-      Artık televizyonunuza harici uygulama (.apk / .wgt / IPK) kurma devri bitti!
-      Samsung ve LG Smart TV'lerde dahili <b>Web Tarayıcısını</b> açıp telefonunuzla eşleştirin.
-      <b>Multi-View (PiP)</b> ile PS5 oyununuz açıkken Türkçe altyazılar sıfır gecikmeyle ekranınıza yansısın!
+      Uygulama artık arka planda çalışabiliyor.
+      Tüm ekranı çevir kısayolu, oyun içindeki kitap, mesaj ve notları okumak için kullanılabilir.
+      Performans ve arayüz iyileştirmeleri yapıldı.
     </p>
     <div class="promo-grid">
       <div class="promo-item">
@@ -973,7 +973,7 @@
       </span>
     </div>
     <div class="modal-actions">
-      <a href="https://github.com/jacarew/jcrw-caption/releases/download/v1.0.44/jcrw-tv-receiver-1.0.26-universal.apk" download="jcrw-tv-receiver-1.0.26-universal.apk" class="btn" id="warnDownloadTvBtn" style="background: #2563eb;">✅ Evet, Android TV İndir</a>
+      <a href="https://github.com/jacarew/jcrw-caption/releases/download/v1.0.45/jcrw-tv-receiver-1.0.26-universal.apk" download="jcrw-tv-receiver-1.0.26-universal.apk" class="btn" id="warnDownloadTvBtn" style="background: #2563eb;">✅ Evet, Android TV İndir</a>
       <a href="#download" class="btn" id="warnGoCompanionBtn" style="background: rgba(34, 230, 168, 0.2); border-color: var(--green); color: #fff;">📺 Samsung / LG Kullanıyorum</a>
       <button class="btn ghost" id="warnCancelBtn">İptal</button>
     </div>
@@ -1077,11 +1077,11 @@
   /* ---- GitHub kullanıcı adı / repo (APK'lar Releases'tan gelir) ---- */
   var GH="jacarew/jcrw-caption";
   var LINKS={
-    mobile:"https://github.com/jacarew/jcrw-caption/releases/download/v1.0.44/app-companion-1.0.44-release.apk",
-    tv:"https://github.com/jacarew/jcrw-caption/releases/download/v1.0.44/jcrw-tv-receiver-1.0.26-universal.apk"
+    mobile:"https://github.com/jacarew/jcrw-caption/releases/download/v1.0.45/app-companion-1.0.45-release.apk",
+    tv:"https://github.com/jacarew/jcrw-caption/releases/download/v1.0.45/jcrw-tv-receiver-1.0.26-universal.apk"
   };
   /* version.json okunamazsa (ör. dosyayı çift tıklayıp açınca) gösterilecek yedek */
-  var VER={"versionCode": 44, "versionName": "1.0.44", "receiverVersion": "1.0.26", "date": "2026-11-07", "notes": {"tr": ["Yenilenmiş kullanıcı dostu arayüz", "Kararlılık ve performans artışı", "Bug fix"], "en": ["Refreshed user-friendly interface", "Stability and performance improvements", "Bug fixes"]}, "receiverNotes": {"tr": ["Logo güncellendi.", "Kararlılık ve görsel sunum iyileştirildi."], "en": ["Logo updated.", "Stability and performance improvements."]}, "sender": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.44/app-companion-1.0.44-release.apk", "receiver": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.44/jcrw-tv-receiver-1.0.26-universal.apk"};
+  var VER={"versionCode": 44, "versionName": "1.0.45", "receiverVersion": "1.0.26", "date": "2026-11-07", "notes": {"tr": ["Yenilenmiş kullanıcı dostu arayüz", "Kararlılık ve performans artışı", "Bug fix"], "en": ["Refreshed user-friendly interface", "Stability and performance improvements", "Bug fixes"]}, "receiverNotes": {"tr": ["Logo güncellendi.", "Kararlılık ve görsel sunum iyileştirildi."], "en": ["Logo updated.", "Stability and performance improvements."]}, "sender": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.45/app-companion-1.0.45-release.apk", "receiver": "https://github.com/jacarew/jcrw-caption/releases/download/v1.0.45/jcrw-tv-receiver-1.0.26-universal.apk"};
 
   function pick(n){var v=n&&(n[lang]||n.en||n.tr||n);return Array.isArray(v)?v:(v?[v]:[]);}
   function fmt(d){try{return new Date(d).toLocaleDateString(lang==="tr"?"tr-TR":"en-US",{day:"numeric",month:"long",year:"numeric"});}catch(e){return d||"";}}
